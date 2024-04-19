@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul , ol {
+    list-style: none;
+}
+ a{
+    text-decoration: none;
+    color: inherit;
+ }
+
+ html{
+    font-size: 62.5%;
+
+    @include responsive(promax){
+      font-size: 50%;
+    }
+ }
+ body{
+    --bs-body-font-family : iransanse , sans-serif;
+    --bs-body-font-weight : 500;
+    --bs-body-color:white ;
+    background-color: black;
+
+    margin-top: 58px;
+    @include responsive(laptop){
+      margin-top: 85px;
+    }
+ }

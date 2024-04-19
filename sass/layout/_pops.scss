@@ -1,0 +1,61 @@
+.pops{
+    
+    &__title{
+        &-genre{
+            span{
+                padding: .3rem 1rem;
+            }
+        }
+    }
+    &__posters{
+
+        @include responsive(phone){
+            display: none;
+
+        }
+        &-item{
+            position: relative;
+            min-width: 130px;
+            cursor: pointer;
+
+            img{
+                object-fit: cover;
+            }
+        }
+        &-cover{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            // height: 100%;
+            // width: 100%;
+            z-index: 2;
+            // background: #000;
+            background: linear-gradient(180deg,rgba(0,0,0,0) 30.31%,rgba(0,0,0,.85) 90.92%);
+        }
+        &-logo{
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            z-index: 5;
+            // background-color: red;
+            img{
+                position: absolute;
+                bottom: 2rem;
+            }
+        }
+
+    }
+    &__swiper{
+        display: none;
+        @include responsive(phone){
+            display: block;
+        }
+        &-chev{
+            display: none;
+        }
+        &-item{}
+    }
+}

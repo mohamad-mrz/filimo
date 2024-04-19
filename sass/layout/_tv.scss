@@ -1,0 +1,30 @@
+.tv{
+    @include responsive(phonel){
+        display: none;
+    }
+    &__info{
+        
+        &-btn{
+            width: max-content;
+            background: #606060;
+        }
+        &-options{
+            img{
+                width: 40px;
+                height: 25px;
+            }
+        }
+    }
+   
+    &__pic{}
+}
+.tv2{
+    display: none;
+    @include responsive(phonel){
+        display: block;
+    }
+    &__info-btn{
+        background: #606060;
+   
+    }
+}

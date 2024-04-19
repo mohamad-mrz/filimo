@@ -1,0 +1,34 @@
+// ! ***************************   font size clases   *****************************
+
+.fs-s{
+    font-size: $font-size-small;              // 1.2rem = 12px
+}
+.fs-m{
+    font-size: $font-size-medium;               //1.4rem = 14px
+}
+.fs-l{
+    font-size: $font-size-large;                //1.6rem = 16px
+}
+.fs-xl{
+    font-size: $font-size-big;              //1.7rem = 17px
+}
+
+// !  *****************************     mixin clases     ********************************
+ .flex-between{
+    @include centerizetag($justify :space-between);
+ }
+ .flex-center{
+    @include centerizetag;
+ }
+ .flex-around{
+    @include centerizetag($justify:space-around);
+ }
+ .position-center {
+    @include positioncenter;
+ }
+ .ellipsis2{
+    @include ellipsis(2);
+ }
+ .ellipsis3{
+    @include ellipsis(3);
+ }

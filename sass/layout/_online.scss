@@ -1,0 +1,23 @@
+.online{
+    background-image: url(../../public/images/online-bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__header{}
+    &__movies{
+        margin-top: 5rem;
+        max-height: 57rem;
+        &-box{
+            width: 53rem;
+            background: rgba(255,255,255,.06);
+            border: 1px solid #33353d;
+            box-shadow: 0 10px 36px #00000040;
+            // backdrop-filter: blur(32px);
+        }
+        &-ticket{
+            background-color: rgba(20, 20, 20, 0.2);
+            i{
+                transform: rotate(90deg);
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.comments{
+
+    // position: relative;
+    &__box{
+    }
+    &__swiper{
+
+        &-item{
+            width: 403.333px;
+            margin-left: 15px;
+            // border: 5px solid red;
+            border: 1px solid #33353d;
+        }
+        &-txt{
+            height: 7.5rem;
+            overflow: hidden;
+            overflow-y: auto;
+            // ::-webkit-scrollbar{
+            //     width: 55px;
+            // }
+
+
+            // display: -webkit-box;
+            // -webkit-line-clamp: 4; /* number of lines to show */
+            //         // line-clamp: 2; 
+            // -webkit-box-orient: vertical;
+        }
+    }
+
+}

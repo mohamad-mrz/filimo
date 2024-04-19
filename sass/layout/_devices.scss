@@ -1,0 +1,28 @@
+.devices{
+    @include responsive(phonel){
+        border: 5px solid red;
+        display: none;
+
+    }
+    &__pic{
+        @include responsive(laptop){
+            width: 450px;
+        }
+    }
+    &__title{}
+    &__items{}
+}
+
+
+.devicesv2{
+    display: none;
+    @include responsive(phonel){
+        display: block;
+    }
+    &__pic{
+        width: 400px;
+        @include responsive(promax){
+            width: 320px;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+//!********************************  utils directory    ******************************!//
+// @import "utils/variable";
+@import "utils/mixin";
+@import "utils/function";
+
+
+
+//!********************************  bootstrap directory******************************!//
+@import "sass/custom";
+
+//!********************************  base directory    ******************************!//
+@import "base/typography";
+@import "base/defaults";
+// @import "base/clases";
+
+//!********************************  vendor directory    ******************************!//
+//!********************************  themes directory    ******************************!//
+//!********************************  layouts directory    ******************************!//
+@import "layout/header";
+@import "layout/slider";
+@import "layout/pops";
+@import "layout/fereshte";
+@import "layout/devices";
+@import "layout/tv";
+@import "layout/free";
+@import "layout/kids";
+@import "layout/online";
+@import "layout/comments";
+@import "layout/questions";
+@import "layout/end";
+@import "layout/footer";
+//!********************************  components directory    ******************************!//
+//!********************************  pages directory    ******************************!//
+@import "pages/home";

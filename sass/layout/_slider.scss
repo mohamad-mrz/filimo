@@ -1,0 +1,64 @@
+.slider{
+    position: relative;
+    &__ratio{
+        padding-top: 37%;
+        @include responsive(tabletl){
+            padding-top: 60%;
+        }
+        @include responsive(phonel){
+            padding-top: 90%;
+        }
+        @include responsive(phone){
+            padding-top: 110%;
+        }
+    }
+    &__bg{
+        background: url(../../public/images/slider-bg1.webp) ;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-position:center;
+        background-size: cover;
+    }
+    &__grad1{
+        background: linear-gradient(186.97deg,rgba(21,21,21,0) 5.45%,#151515 94.55%);
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+    &__grad2{
+        background: radial-gradient(130% 44% at 41% 40%,rgba(0,0,0,0) 0,#151515 100%);
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+    &__info{
+        position: absolute;
+        z-index: 5;
+        bottom: 8rem;
+        left: 0;
+        right: 0;
+        &-control{
+            font-size: 3.5rem;
+            @include responsive(phone){
+                font-size: 2.5rem;
+            }
+        }
+        &-btn{
+            width: 285px;
+            padding: 17px 0;
+        }
+    }
+}
+.check{
+    background-color: rgba(1, 72, 4, 0.5);
+    padding: .6rem;
+}
